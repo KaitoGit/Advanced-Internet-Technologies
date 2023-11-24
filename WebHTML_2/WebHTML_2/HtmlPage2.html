@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Task2</title>
+    <script>
+        let text1 = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+        let textArray = text1.split(' ');
+        let i = 0;
+        function dysplaySentence() {
+            if (i < textArray.length) {
+                document.write(textArray[i] + " "); i++;
+            }
+            else {
+                i = 0;
+            }
+        }
+            setInterval(dysplaySentence, 1000);
+    </script>
+</head>
+<body></body>
+</html>

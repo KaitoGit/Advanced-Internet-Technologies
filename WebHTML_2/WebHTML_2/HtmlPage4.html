@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        tr, th, td {
+            border: 1px solid red;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        table {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        let data1 = document.documentURI.split("?");
+        let data2 = data1[1].replace('%40', '@');
+        let data = new Array(6);
+        let data3 = data2.split('&');
+        let temp;
+        for (let i = 0; i < data3.length; i++) {
+            temp = data3[i].split('=');
+          data[2 * i] = temp[0];
+          data[2 * i + 1] = temp[1];
+        }
+        //to display the data in a table
+        document.write('<table><tr><td colspan="2">Student Form</td></tr>');
+        for (let i = 0; i < data.length / 2; i++) {
+            document.write('<tr><td>' + data[2 * i] + '</td><td>' + data[2 * i + 1] + '</td></tr>');
+        }
+        document.write('</table>');
+
+    </script>
+</body>
+</html>

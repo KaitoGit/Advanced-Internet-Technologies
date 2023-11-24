@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        let carsArray = new Array(7);
+    //show the images 1.png to 7.png the second picture needs to cover a corner of the first picture one by one
+        let i = 1;
+        function showImage() {
+            if (i < 8) {
+                document.write('<img src="Pictures/' + i + '.png" alt="image' + i + '" style="position:absolute; top:' + i * 100 + 'px; left:' + i * 100 + 'px;" />');
+                i++;
+            }
+            else {
+                i = 1;
+            }
+        }
+        setInterval(showImage, 1000);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page1</title>
+    <style>
+        tr,td{
+            border:1px solid blue;
+        }
+        body{
+            font-family:Verdana;
+            font-size:medium;
+            padding:5px
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="HtmlPage2.html">
+        <table style="width:70%;margin:auto; border:1px solid red">
+            <tr><td colspan="2">Student Form</td></tr>
+            <tr><td>Name</td><td><input id="Textname" type="text" name="name" placeholder="John" /></td></tr>
+            <tr><td>Surname</td><td><input id="TextSurname" type="text" name="surname" placeholder="Spencer" /></td></tr>
+            <tr><td>E-mail</td><td><input id="TextMail" type="text" name="mail" placeholder="jspencer@gmail.com" /></td></tr>
+            <tr><td><input id="Reset1" type="reset" value="reset" /></td><td><input id="Submit1" type="submit" value="submit" /></td></tr>
+        </table>
+    </form>
+</body>
+</html>
